@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Planner Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/jpg" href="download.jpg" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="mealContainer">
+      <div class="nav">
+        <nav>
+          <!-- <link rel="icon" type="image/jpg" href="icon.jpg"> -->
+          <img src="icon.jpg" alt="image" />
+          <span>Meal Planner </span>
+        </nav>
+      </div>
+
+      <form>
+        <div class="input1">
+          <input
+            type="number"
+            min="0"
+            placeholder="Enter Height (in cm)"
+            id="height"
+          />
+          <input
+            type="number"
+            placeholder="Enter Weight (in kgs.)"
+            min="0"
+            id="weight"
+          />
+          <input
+            type="number"
+            placeholder="Enter Age (in yrs.)"
+            min="0"
+            id="age"
+          />
+        </div>
+        <div class="input2">
+          <input type="text" placeholder="Enter Gender" id="gender" />
+          <select name="base" id="activity">
+            <option>Activity Level</option>
+            <option value="light">Light</option>
+            <option value="moderate">Moderate</option>
+            <option value="active">Active</option>
+          </select>
+        </div>
+        <div class="button">
+          <button type="button" id="btn">Generate Meal</button>
+        </div>
+      </form>
+
+      <div class="chart">
+        <div class="card-box"></div>
+      </div>
+
+      <div class="ingrediants">
+        <span>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
+          aliquid! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Illum, aliquid! Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Illum, aliquid! Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Illum, aliquid! Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Illum, aliquid!
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
